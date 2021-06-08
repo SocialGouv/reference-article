@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should extract article tokens from "Article D.  212-4" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D. 212-4",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D. 212-4" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D. 212-4",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D.212" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D.212",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D.212-5" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D.212-5",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D.212-5-6" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D.212-5-6",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D.212-5-6-7" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D.212-5-6-7",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D-212" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D-212",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D-212-4" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D-212-4",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D212 du code penal et article R413" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "R413",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D212" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D212",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article D212-3" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D212-3",
+  },
+]
+`;
+
+exports[`should extract article tokens from "Article X*212-4" 1`] = `Array []`;
+
+exports[`should extract article tokens from "Article XD212" 1`] = `Array []`;
+
+exports[`should extract article tokens from "L. 1251-23xx du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 1251-23xx",
+  },
+]
+`;
+
+exports[`should extract article tokens from "les modalités fixées par les articles L. 2313‑8 et R. 2313-3 à R. 2313-6 du code du travail ainsi que le L. 1251-18" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2313‑8",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 2313-3 à R. 2313-6",
+  },
+  Object {
+    "code": undefined,
+    "text": "L. 1251-18",
+  },
+]
+`;
+
+exports[`should extract article tokens from "l’allocation de remplacement pour maternité ou paternité, prévues aux articles L. 613-19 à L.613-19-2 et L. 722-8 à 25 du code de la sécurité sociale, aux articles L. 732-10 à L. 732-12-1 du code rural et à l’article 17 de la loi n° 97-1051 du 18 novembre 1997 d’orientation sur la pêche maritime et les cultures marines" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006073189",
+      "name": "code de la sécurité sociale",
+    },
+    "text": "L. 613-19 à L.613-19-2",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006073189",
+      "name": "code de la sécurité sociale",
+    },
+    "text": "L. 722-8 à 25",
+  },
+]
+`;
+
+exports[`should find with code for actual real life set 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2313-8",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 2313-3 à R. 2313-6",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 2242-7",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2242-8",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 2242-2 à R. 2242-11",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2242-9",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 2242-9 à R. 2242-11",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 1142-2",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 1142-2-1",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 4521-1",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 1142-2",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 1142-2-1",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 1234-9",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 8223-2",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 1263-3",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 1263-4",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 1263-6",
+  },
+  Object {
+    "code": undefined,
+    "text": "L. 4412-2",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 4412-97/II",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2315-24",
+  },
+  Object {
+    "code": undefined,
+    "text": "L. 2315-38 à 40",
+  },
+  Object {
+    "code": undefined,
+    "text": "L1111-2",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2314-6",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "R. 2314-6",
+  },
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L 2312-36",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 2312-8",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 2312-10 à R. 2312-14",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 2312-9",
+  },
+  Object {
+    "code": undefined,
+    "text": "R. 2312-10 à R. 2312-14",
+  },
+]
+`;
+
+exports[`should resolve range "D. 5132-9 à D. 5132-10-4 du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "D. 5132-9 à D. 5132-10-4",
+  },
+]
+`;
+
+exports[`should resolve range "D. 5132-9 à D. 5132-10-4" 1`] = `
+Array [
+  Object {
+    "code": undefined,
+    "text": "D. 5132-9 à D. 5132-10-4",
+  },
+]
+`;
+
+exports[`should resolve range "L. 351-1 à L. 351-5 du code de la sécurité sociale" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006073189",
+      "name": "code de la sécurité sociale",
+    },
+    "text": "L. 351-1 à L. 351-5",
+  },
+]
+`;
+
+exports[`should resolve range "L. 1233‑34 à L. 1233-35-1 du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 1233‑34 à L. 1233-35-1",
+  },
+]
+`;
+
+exports[`should resolve range "L. 1251-21 à L. 1251-23xx du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 1251-21 à L. 1251-23xx",
+  },
+]
+`;
+
+exports[`should resolve range "L. 2312-72 à 2312-77 du code de l'éducation" 1`] = `Array []`;
+
+exports[`should resolve range "L. 2312-72 à 2312-77 du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2312-72 à 2312-77",
+  },
+]
+`;
+
+exports[`should resolve range "L. 2315-38 à 40 du code du travail" 1`] = `
+Array [
+  Object {
+    "code": Object {
+      "id": "LEGITEXT000006072050",
+      "name": "code du travail",
+    },
+    "text": "L. 2315-38 à 40",
+  },
+]
+`;
