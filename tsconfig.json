@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "lib": ["dom", "es2019"],
-    "target": "esnext",
-    "module": "ESNext",
-    "moduleResolution": "node",
     "allowJs": false,
+    "declaration": true,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "sourceMap": true,
     "strict": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "types": ["jest", "jsdom", "node"],
-    "paths": {
-      "talisman/*": ["./packages/@types/talisman/*"],
-    }
+    "lib": [
+      "es2019"
+    ],
+    "esModuleInterop": true
   },
-  "include": ["src"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules" ]
 }

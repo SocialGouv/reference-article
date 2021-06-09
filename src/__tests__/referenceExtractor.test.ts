@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
-import { classifyTokens, extractReferences } from "../referenceExtractor";
+import { classifyTokens, extractReferences } from "../reference-extractor";
+import treebank from "talisman/tokenizers/words/treebank";
 
 const annotatedTokens = fs
   .readFileSync(
@@ -36,12 +37,13 @@ test.each([
   "Article D.212-5-6-7",
   "Article XD212",
 ])('should extract article tokens from "%s"', (input) => {
-  expect(extractReferences(input)).toMatchSnapshot();
+  const tokens = treebank(input);
+  expect(extractReferences(tokens)).toMatchSnapshot();
 });
 
 test("should success with actual real life set", () => {
   const predictions = classifyTokens(tokens);
-  // keep this to easily check prediction errors :
+  // kept here to ease checking prediction errors :
   /*
   const report = tokens.map((t, i) => {
     const label = labels[i];
@@ -58,7 +60,7 @@ test("should success with actual real life set", () => {
 });
 
 test("should find with code for actual real life set", () =>
-  expect(extractReferences(tokens.join(" "))).toMatchSnapshot());
+  expect(extractReferences(tokens)).toMatchSnapshot());
 
 test.each([
   "L. 1251-21 à L. 1251-23xx du code du travail",
@@ -70,6 +72,7 @@ test.each([
   "L. 2315-38 à 40 du code du travail",
   "L. 351-1 à L. 351-5 du code de la sécurité sociale",
 ])('should resolve range "%s"', (range) => {
-  const extractedRefs = extractReferences(range);
+  const tokens = treebank(range);
+  const extractedRefs = extractReferences(tokens);
   expect(extractedRefs).toMatchSnapshot();
 });
