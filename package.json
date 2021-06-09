@@ -2,8 +2,8 @@
   "name": "@socialgouv/reference-article",
   "version": "1.0.0",
   "author": "Rémi Mélisson <remi@recog.eu>",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/reference-extractor.js",
+  "types": "dist/reference-extractor.d.ts",
   "files": [
     "/dist"
   ],
