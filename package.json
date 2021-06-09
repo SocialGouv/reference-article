@@ -18,6 +18,11 @@
     "typescript": "^4.3.2",
     "talisman": "^1.1.4"
   },
+  "scripts": {
+    "test": "yarn jest --detectOpenHandles",
+    "build": "./scripts/build.sh",
+    "prepublish": "npm run build"
+  },
   "eslintConfig": {
     "extends": [
       "@socialgouv/eslint-config-typescript"
