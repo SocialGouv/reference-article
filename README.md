@@ -4,7 +4,7 @@ Librairie d'identification des références aux articles de loi dans du texte br
 
 ## Usage
 
-```
+```js
 const text = "les modalités fixées par les articles L. 2313‑8 et R. 2313-3 à R. 2313-6 du code du travail ainsi que le L. 1251-18"
 
 // const tokens = talisman.treebank(text)
