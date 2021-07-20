@@ -1,7 +1,10 @@
 {
   "name": "@socialgouv/reference-article",
   "version": "1.0.0",
-  "author": "Rémi Mélisson <remi@recog.eu>",
+  "repository": "git@github.com:SocialGouv/reference-article.git",
+  "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
+  "bugs": "https://github.com/SocialGouv/reference-article/issues",
+  "license": "Apache-2.0",
   "main": "dist/reference-extractor.js",
   "types": "dist/reference-extractor.d.ts",
   "files": [
